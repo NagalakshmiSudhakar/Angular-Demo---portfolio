@@ -1,1 +1,61 @@
-<p>skills works!</p>
+
+<section class="skills" id="skills">
+
+  <!-- Section Heading -->
+  <div class="section-heading">
+
+    <p>MY TECHNICAL EXPERTISE</p>
+
+    <h2>My <span>Skills</span></h2>
+
+    <p class="subtitle">
+      Technologies and tools I use to build applications
+      and explore cybersecurity.
+    </p>
+
+  </div>
+
+  <!-- Search Input -->
+  <div class="skill-search">
+
+    <input
+      type="text"
+      placeholder="Search my skills..."
+      [value]="searchTerm()"
+      (input)="searchTerm.set($any($event.target).value)"
+    />
+
+  </div>
+
+  <!-- Skills Categories -->
+  <div class="skills-container">
+
+    @for (category of categories; track category) {
+
+      <div class="skill-category">
+
+        <h3>{{ category }}</h3>
+
+        <div class="skill-list">
+
+          @for (skill of filteredSkills(); track skill.name) {
+
+            @if (skill.category === category) {
+
+              <div class="skill-card">
+                {{ skill.name }}
+              </div>
+
+            }
+
+          }
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+</section>
