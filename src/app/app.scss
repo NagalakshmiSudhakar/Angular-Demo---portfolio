@@ -1,0 +1,21 @@
+.portfolio-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #0f0f17;
+  color: #ffffff;
+  padding: 20px;
+
+  h1 {
+    font-size: 42px;
+    color: #a78bfa;
+  }
+
+  p {
+    font-size: 18px;
+    color: #b8b8c5;
+  }
+}
