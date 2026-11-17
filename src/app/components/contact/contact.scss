@@ -1,0 +1,127 @@
+
+.contact {
+  padding: 100px 10%;
+  background: #12121c;
+  color: #ffffff;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-subtitle {
+  color: #a78bfa;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  font-size: clamp(32px, 5vw, 44px);
+  margin-bottom: 15px;
+}
+
+.section-heading h2 span {
+  color: #a78bfa;
+}
+
+.section-description {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #aaaaba;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info,
+.contact-message {
+  padding: 35px;
+  background: #1b1b29;
+  border: 1px solid #302b45;
+  border-radius: 16px;
+}
+
+.contact-info h3,
+.contact-message h3 {
+  font-size: 23px;
+  margin-bottom: 18px;
+}
+
+.contact-info > p,
+.contact-message > p {
+  color: #b8b8c7;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 22px;
+}
+
+.contact-label {
+  color: #a78bfa;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact-item a {
+  color: #e2e2ed;
+  font-size: 14px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #a78bfa;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 13px 24px;
+  background: #8b5cf6;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #7c3aed;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 75px 6%;
+  }
+
+  .contact-info,
+  .contact-message {
+    padding: 25px;
+  }
+}

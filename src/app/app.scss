@@ -19,3 +19,57 @@
     color: #b8b8c5;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  margin: 0;
+  background: #0f0f17;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+  padding: 30px 10%;
+  background: #0b0b12;
+  border-top: 1px solid #302b45;
+  text-align: center;
+}
+
+.footer p {
+  color: #aaaaba;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.footer p span {
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+.footer .copyright {
+  font-size: 12px;
+  color: #77778a;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 15px;
+  color: #c4b5fd;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-to-top:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 25px 6%;
+  }
+}
